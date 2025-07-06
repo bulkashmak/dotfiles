@@ -1,0 +1,13 @@
+# Font
+font-family = JetBrains Mono
+font-size = 14
+
+# Theme
+theme = Monokai Remastered
+
+# Background
+# background = #141414
+background-opacity = 0.8
+
+# Other
+gtk-titlebar = false
