@@ -77,8 +77,10 @@
 #language,
 #memory,
 #mode,
+#bluetooth,
 #network,
 #pulseaudio,
+#backlight,
 #temperature,
 #tray,
 #backlight,
@@ -160,6 +162,16 @@
 
 #pulseaudio {
 	background: @sound;
+	color: @black;
+}
+
+#backlight {
+	background: @sound;
+	color: @black;
+}
+
+#bluetooth {
+	background: @network;
 	color: @black;
 }
 
