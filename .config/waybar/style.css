@@ -83,6 +83,7 @@
 #backlight,
 #temperature,
 #tray,
+#custom-notification,
 #backlight,
 #idle_inhibitor,
 #disk,
@@ -217,6 +218,12 @@
 #clock.time {
 	background: @time;
 	color: @black;
+}
+
+#custom-notification {
+	background: @time;
+	color: @black;
+	font-family: "NotoSansMono Nerd Font";
 }
 
 #custom-arrow1 {
