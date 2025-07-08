@@ -42,8 +42,8 @@
 			"critical": 15
 		},
 		"format-time": "{H}:{M:02}",
-		"format": "{icon} {capacity}% [{time}]",
-		"format-charging": " {capacity}% [{time}]",
+		"format": "{icon} {capacity}%",
+		"format-charging": " {capacity}%",
 		"format-charging-full": " {capacity}%",
 		"format-full": "{icon} {capacity}%",
 		"format-alt": "{icon} {power}W",
@@ -85,7 +85,7 @@
 		"format": " {short}",
 		//"format-us": "US",
 		//"format-ru": "RU",
-		//"min-length": 5,
+		"min-length": 4,
 		"on-click": "hyprctl switchxkblayout current next",
 		"tooltip": false
 	},
