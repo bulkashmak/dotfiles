@@ -82,9 +82,11 @@
 	},
 
 	"hyprland/language": {
-		"format": " {}",
-		"min-length": 5,
-		"on-click": "swaymsg 'input * xkb_switch_layout next'",
+		"format": " {short}",
+		//"format-us": "US",
+		//"format-ru": "RU",
+		//"min-length": 5,
+		"on-click": "hyprctl switchxkblayout current next",
 		"tooltip": false
 	},
 
