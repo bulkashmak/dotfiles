@@ -5,7 +5,7 @@ My config dotfiles for Linux systems
 ## Usage
 
 1. Clone the repository to your user's home directory (like `/home/your_user_name/`)
-2. Use (GNU Stow)[https://www.gnu.org/software/stow/manual/stow.html] dotfiles manager to create symbolic links to `~/.config/` directory
+2. Use GNU Stow dotfiles manager to create symbolic links to `~/.config/` directory. See: https://www.gnu.org/software/stow/manual/stow.html
 
 ## Tools
 
@@ -27,5 +27,5 @@ My config dotfiles for Linux systems
 - NeoVim: Vim on steroids
 
 ### Fonts
-- (JetBrainsMono Nerd Font)[https://www.nerdfonts.com/]
+- JetBrainsMono Nerd Font https://www.nerdfonts.com/
 
