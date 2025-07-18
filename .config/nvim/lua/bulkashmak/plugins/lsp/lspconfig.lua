@@ -93,6 +93,13 @@ return {
                         filetypes = { "go", "gomod", "gowork", "gotmpl" },
                     })
                 end,
+                ["kotlin_lsp"] = function()
+                    -- configure kotlin server
+                    lspconfig["kotlin_lsp"].setup({
+                        capabilities = capabilities,
+                        filetypes = { "kt", "kts" },
+                    })
+                end,
                 ["lua_ls"] = function()
                     -- configure lua server (with special settings)
                     lspconfig["lua_ls"].setup({
