@@ -37,7 +37,7 @@ return {
             ensure_installed = {
                 "gofumpt", -- go formatter
                 "stylua", -- lua formatter
-                "golangci-lint", -- go linter
+                --"golangci-lint", -- go linter
             },
         })
     end,
