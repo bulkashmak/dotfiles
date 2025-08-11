@@ -1,2 +1,2 @@
-# Starship prompt
+# Starship init
 eval "$(starship init bash)"
