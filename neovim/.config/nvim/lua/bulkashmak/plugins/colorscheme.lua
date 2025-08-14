@@ -1,6 +1,6 @@
 return {
     "Mofiqul/vscode.nvim",
-    priority = 1000,
+    priority = 1000, -- load before other plugins
     config = function()
         require("vscode").setup({
             transparent = true,
@@ -9,6 +9,8 @@ return {
             disable_nvimtree_bg = true,
         })
 
-        vim.cmd("colorscheme vscode")
-    end
+        -- Enable theme
+        require("vscode").load()
+        --vim.cmd("colorscheme vscode")
+    end,
 }
