@@ -86,7 +86,7 @@
 		"format": " {short}",
 		//"format-us": "US",
 		//"format-ru": "RU",
-		"min-length": 4,
+		"min-length": 5,
 		"on-click": "hyprctl switchxkblayout current next",
 		"tooltip": false
 	},
