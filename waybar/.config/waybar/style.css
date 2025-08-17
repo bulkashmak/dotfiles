@@ -29,7 +29,7 @@
 @define-color white	#ebdbb2;
 @define-color bg2	#504945;
 
-@define-color orange    #ff7b00;
+@define-color orange    #ff5900;
 @define-color deep_red  #981e32;
 
 
@@ -38,7 +38,7 @@
 @define-color mode	@black;
 @define-color unfocused	@bg2;
 @define-color focused	@braqua;
-@define-color inactive	@deep_red;
+@define-color inactive	@orange;
 @define-color sound	@brpurple;
 @define-color network	@purple;
 @define-color memory	@braqua;
@@ -135,7 +135,7 @@
 
 /* Inactive (on unfocused output) */
 #workspaces button.visible {
-	color: @white;
+	color: @black;
 	background: @inactive;
 }
 
