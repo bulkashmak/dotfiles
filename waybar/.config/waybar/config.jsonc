@@ -47,8 +47,8 @@
 	},
 
     "hyprland/window": {
-        "format": "> {title}",
-		"max-length": 30,
+        "format": "> {}",
+		"max-length": 50,
         "tooltip": false
     },
 
