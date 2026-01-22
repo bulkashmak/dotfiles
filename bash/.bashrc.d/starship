@@ -1,2 +1,3 @@
-# Starship init
+# ~/.bashrc.d/starship
+
 eval "$(starship init bash)"

@@ -1,0 +1,10 @@
+# ~/.bashrc.d/aliases
+
+alias ff="fastfetch"
+
+alias l="lsd -la"
+alias ll="lsd -l"
+alias ls="lsd"
+
+alias lg="lazygit"
+alias ld="lazydocker"
