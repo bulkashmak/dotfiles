@@ -10,4 +10,4 @@ theme = Monokai Remastered
 background-opacity = 0.8
 
 # Other
-gtk-titlebar = false
+gtk-titlebar = true
