@@ -8,3 +8,5 @@ alias ls="lsd"
 
 alias lg="lazygit"
 alias ld="lazydocker"
+
+alias forti="~/.config/scripts/forti-vpn.sh"
