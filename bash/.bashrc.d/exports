@@ -1,6 +1,15 @@
 # ~/.bashrc.d/exports
 
+# Java
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Android SDK
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+# Android Marathon
+export MARATHON_HOME=$HOME/Android/marathon-0.10.4
+export PATH=$PATH:$MARATHON_HOME/bin
