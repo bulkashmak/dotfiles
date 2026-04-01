@@ -10,7 +10,7 @@ theme = Monokai Remastered
 background-opacity = 0.8
 
 # Other
-gtk-titlebar = true
+gtk-titlebar = false
 
 # Keybinds
 ## Unbind tmux/nvim
