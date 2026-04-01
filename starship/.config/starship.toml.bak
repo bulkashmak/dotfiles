@@ -1,36 +1,22 @@
-palette = "gruvbox_dark"
-
-[palettes.gruvbox_dark]
-color_green = "#b8bb26"
-color_red = "#fb4934"
-color_purple = "#d3869b"
-color_yellow = "#fabd2f"
-color_blue = "#83a598"
-color_orange = "#fe8019"
-color_aqua = "#8ec07c"
-color_fg = "#ebdbb2"
-color_bg = "#282828"
-color_gray = "#928374"
-
 [character]
 disabled = false
-success_symbol = '[](bold fg:color_green)'
-error_symbol = '[](bold fg:color_red)'
-vimcmd_symbol = '[](bold fg:color_green)'
-vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
-vimcmd_replace_symbol = '[](bold fg:color_purple)'
-vimcmd_visual_symbol = '[](bold fg:color_yellow)'
+success_symbol = '[](bold fg:color_green)'
+error_symbol = '[](bold fg:color_red)'
+vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
+vimcmd_replace_symbol = '[](bold fg:color_purple)'
+vimcmd_visual_symbol = '[](bold fg:color_yellow)'
 
 [directory]
-style = "fg:color_red"
+style = "fg:#ED182A"
 read_only = " 󰌾"
 
 [git_branch]
-style = "fg:color_yellow"
+style = "fg:#ffd900"
 symbol = " "
 
 [git_commit]
-style = "fg:color_yellow"
+style = "fg:#ffd900"
 tag_symbol = '  '
 
 [aws]
