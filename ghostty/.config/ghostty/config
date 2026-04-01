@@ -11,3 +11,10 @@ background-opacity = 0.8
 
 # Other
 gtk-titlebar = true
+
+# Keybinds
+## Unbind tmux/nvim
+keybind = ctrl+shift+h=unbind
+keybind = ctrl+shift+j=unbind
+keybind = ctrl+shift+k=unbind
+keybind = ctrl+shift+l=unbind
