@@ -279,7 +279,6 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "waybar"
-spawn-at-startup "vicinae" "server"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -389,12 +388,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return hotkey-overlay-title="Open a Terminal: Ghostty" { spawn "ghostty"; }
-    // Alt+Space hotkey-overlay-title="Run an Application: Fuzzel" { spawn "fuzzel"; }
-    Mod+Space hotkey-overlay-title="Run an Application: Vicinae" { spawn "vicinae" "toggle"; }
-    Alt+Space hotkey-overlay-title="Run an Application: DMS Spotlight" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
-    Mod+E hotkey-overlay-title="Run an Application: Nautilus" { spawn "nautilus"; }
-    Mod+N hotkey-overlay-title="Run an Application: DMS Notifications" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    // Mod+E hotkey-overlay-title="Run an Application: dolphin" { spawn "dolphin" }
     Super+Ctrl+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
@@ -421,7 +417,7 @@ binds {
     // Example brightness key mappings for brightnessctl.
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
     // but you need to manually put each argument in separate "" quotes.
-    XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
@@ -659,5 +655,3 @@ include "dms/cursor.kdl"
 include "dms/binds.kdl"
 
 include "dms/outputs.kdl"
-
-include "dms/windowrules.kdl"
