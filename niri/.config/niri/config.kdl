@@ -335,6 +335,42 @@ workspace "9"
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Window-Rules
 
+// --- Zoom ---
+
+window-rule {
+    match app-id="zoom"
+    match app-id="Zoom"
+    match app-id=r#"^zoom$"#
+    
+    // Optional: open Zoom on a specific workspace
+    // open-on-workspace "zoom"
+}
+
+// Float the small popup windows
+window-rule {
+    match app-id="zoom" title="^zoom$"
+    match app-id="zoom" title="as_toolbar"
+    match app-id="zoom" title="as_taskbar"
+    match app-id="zoom" title="^Zoom$"
+    match app-id="zoom" title="meeting_controls"
+    match app-id="zoom" title="notification"
+    match app-id="zoom" title="^pop_up_wnd$"
+    
+    open-floating true
+}
+
+// Don't float the actual main meeting window or settings
+window-rule {
+    match app-id="zoom" title="^Zoom Meeting$"
+    match app-id="zoom" title="Settings"
+    match app-id="zoom" title="Zoom - Free Account"
+    match app-id="zoom" title="Zoom Workplace"
+    
+    open-floating false
+}
+
+// --- Default ---
+
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 window-rule {
