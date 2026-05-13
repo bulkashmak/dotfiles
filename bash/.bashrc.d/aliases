@@ -10,3 +10,4 @@ alias lg="lazygit"
 alias ld="lazydocker"
 
 alias forti="~/.config/scripts/forti-vpn.sh"
+alias awgup="~/.config/scripts/amnezia.sh"
