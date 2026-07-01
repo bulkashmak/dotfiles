@@ -1,0 +1,60 @@
+{
+  "bar": {
+    "density": "comfortable",
+    "widgets": {
+      "left": [
+        {
+          "id": "Launcher"
+        },
+        {
+          "id": "Clock"
+        },
+        {
+          "id": "SystemMonitor"
+        },
+        {
+          "id": "MediaMini"
+        }
+      ],
+      "right": [
+        {
+          "id": "Tray"
+        },
+        {
+          "displayMode": "forceOpen",
+          "id": "KeyboardLayout",
+          "showIcon": false
+        },
+        {
+          "displayMode": "graphic",
+          "id": "Battery"
+        },
+        {
+          "displayMode": "alwaysShow",
+          "id": "Brightness"
+        },
+        {
+          "displayMode": "alwaysShow",
+          "id": "Volume"
+        },
+        {
+          "id": "ControlCenter"
+        },
+        {
+          "id": "NotificationHistory"
+        }
+      ]
+    }
+  },
+  "colorSchemes": {
+    "darkMode": true,
+    "predefinedScheme": "Oxide",
+    "useWallpaperColors": false
+  },
+  "general": {
+    "enableShadows": false
+  },
+  "wallpaper": {
+    "enabled": true
+  }
+}
