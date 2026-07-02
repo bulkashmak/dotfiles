@@ -7,7 +7,7 @@ hotkey-overlay {
 }
 
 // Noctalia shell (bar, launcher, lock, notifications).
-spawn-at-startup "noctalia-shell"
+spawn-at-startup "qs" "-c" "noctalia-shell"
 
 // XWayland for X11-only apps (e.g. Bitwarden, Zoom flatpaks) is started and
 // managed by niri itself (it spawns xwayland-satellite via socket activation
@@ -144,14 +144,14 @@ binds {
 
     // Apps
     Mod+Return hotkey-overlay-title="Open a Terminal: Ghostty"              { spawn "ghostty"; }
-    Mod+Space  hotkey-overlay-title="Run an Application: Noctalia Launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+Space  hotkey-overlay-title="Run an Application: Noctalia Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+E      hotkey-overlay-title="Run an Application: Thunar"            { spawn "thunar"; }
-    Mod+S      hotkey-overlay-title="Toggle Noctalia Control Center"        { spawn "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
-    Mod+N      hotkey-overlay-title="Toggle Noctalia Notification Center"   { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"; }
+    Mod+S      hotkey-overlay-title="Toggle Noctalia Control Center"        { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
+    Mod+N      hotkey-overlay-title="Toggle Noctalia Notification Center"   { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"; }
     Mod+P      hotkey-overlay-title="Run an Application: Bitwarden"         { spawn "flatpak" "run" "com.bitwarden.desktop"; }
     Mod+A      hotkey-overlay-title="Run an Application: Bazaar"            { spawn "bazaar"; }
     Mod+T      hotkey-overlay-title="Run an Application: Telegram"          { spawn "flatpak" "run" "org.telegram.desktop"; }
-    Super+Ctrl+L hotkey-overlay-title="Lock the Screen: Noctalia Lock"      { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    Super+Ctrl+L hotkey-overlay-title="Lock the Screen: Noctalia Lock"      { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null            { spawn-sh "pkill orca || exec orca"; }
 
     // Audio
@@ -316,4 +316,4 @@ output "eDP-1" {
 // the active wallpaper in a writable cache (~/.cache/noctalia/wallpapers.json),
 // so picking another wallpaper in the UI still works and persists. The retry
 // loop covers the gap before noctalia's IPC socket is ready.
-spawn-at-startup "sh" "-c" "for i in $(seq 30); do noctalia-shell ipc call wallpaper set \"$HOME/.config/niri/wallpapers/starship.jpg\" all && break; sleep 1; done"
+spawn-at-startup "sh" "-c" "for i in $(seq 30); do qs -c noctalia-shell ipc call wallpaper set \"$HOME/.config/niri/wallpapers/starship.jpg\" all && break; sleep 1; done"
