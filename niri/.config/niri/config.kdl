@@ -143,16 +143,16 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Apps
-    Mod+Return hotkey-overlay-title="Open a Terminal: Ghostty"              { spawn "ghostty"; }
-    Mod+Space  hotkey-overlay-title="Run an Application: Noctalia Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-    Mod+E      hotkey-overlay-title="Run an Application: Thunar"            { spawn "thunar"; }
-    Mod+S      hotkey-overlay-title="Toggle Noctalia Control Center"        { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
-    Mod+N      hotkey-overlay-title="Toggle Noctalia Notification Center"   { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"; }
-    Mod+P      hotkey-overlay-title="Run an Application: Bitwarden"         { spawn "flatpak" "run" "com.bitwarden.desktop"; }
-    Mod+A      hotkey-overlay-title="Run an Application: Bazaar"            { spawn "bazaar"; }
-    Mod+T      hotkey-overlay-title="Run an Application: Telegram"          { spawn "flatpak" "run" "org.telegram.desktop"; }
-    Super+Ctrl+L hotkey-overlay-title="Lock the Screen: Noctalia Lock"      { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
-    Super+Alt+S allow-when-locked=true hotkey-overlay-title=null            { spawn-sh "pkill orca || exec orca"; }
+    Mod+Return   hotkey-overlay-title="Run app: Ghostty"                     { spawn "ghostty"; }
+    Mod+Space    hotkey-overlay-title="Run app: Noctalia Launcher"           { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+E        hotkey-overlay-title="Run app: Nautilus"                    { spawn "thunar"; }
+    Mod+P        hotkey-overlay-title="Run app: Bitwarden"                   { spawn "flatpak" "run" "com.bitwarden.desktop"; }
+    Mod+A        hotkey-overlay-title="Run app: Bazaar"                      { spawn "bazaar"; }
+    Mod+T        hotkey-overlay-title="Run app: Telegram"                    { spawn "flatpak" "run" "org.telegram.desktop"; }
+    Mod+S        hotkey-overlay-title="Toggle: Noctalia Control Center"      { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
+    Mod+N        hotkey-overlay-title="Toggle: Noctalia Notification Center" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"; }
+    Super+Ctrl+L hotkey-overlay-title="Lock screen: Noctalia Lock"           { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    Super+Alt+S  allow-when-locked=true hotkey-overlay-title=null            { spawn-sh "pkill orca || exec orca"; }
 
     // Audio
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
