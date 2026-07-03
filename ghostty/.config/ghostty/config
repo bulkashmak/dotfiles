@@ -3,7 +3,7 @@ font-family = JetBrainsMono Nerd Font
 font-size = 12
 
 # Theme
-theme = Monokai Remastered
+theme = gruvbox-dark-soft-contrast
 
 # Background
 # background = #141414
