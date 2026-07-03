@@ -18,6 +18,7 @@
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
+            "app.zen_browser.zen"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -381,7 +382,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/bulat/.face",
+        "avatarImage": "/home/bulat/Pictures/Avatars/onizuka-1.jpg",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
