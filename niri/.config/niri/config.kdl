@@ -311,9 +311,3 @@ output "eDP-1" {
     scale 1
     position x=0 y=0
 }
-
-// Push our wallpaper to Noctalia via IPC once the shell is up. Noctalia stores
-// the active wallpaper in a writable cache (~/.cache/noctalia/wallpapers.json),
-// so picking another wallpaper in the UI still works and persists. The retry
-// loop covers the gap before noctalia's IPC socket is ready.
-spawn-at-startup "sh" "-c" "for i in $(seq 30); do qs -c noctalia-shell ipc call wallpaper set \"$HOME/.config/niri/wallpapers/starship.jpg\" all && break; sleep 1; done"
