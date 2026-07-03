@@ -1,14 +1,14 @@
 # ~/.bashrc.d/exports
 
 # Java
-export JAVA_HOME=/usr/lib/jvm/temurin-21-jdk
-export PATH=$JAVA_HOME/bin:$PATH
+#export JAVA_HOME=/usr/lib/jvm/temurin-21-jdk
+#export PATH=$JAVA_HOME/bin:$PATH
 
 # Android SDK
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+#export PATH=$PATH:$ANDROID_HOME/platform-tools
+#export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 # Android Marathon
 export MARATHON_HOME=$HOME/Android/marathon-0.10.4
