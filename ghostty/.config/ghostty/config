@@ -3,7 +3,7 @@ font-family = JetBrainsMono Nerd Font
 font-size = 12
 
 # Theme
-theme = gruvbox-dark
+theme = jellybeans-default
 
 # Background
 # background = #141414
