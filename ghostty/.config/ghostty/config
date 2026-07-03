@@ -3,7 +3,7 @@ font-family = JetBrainsMono Nerd Font
 font-size = 12
 
 # Theme
-theme = gruvbox-dark-soft-contrast
+theme = gruvbox-dark
 
 # Background
 # background = #141414
