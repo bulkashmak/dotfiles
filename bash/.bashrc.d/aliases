@@ -10,5 +10,5 @@ alias lg="lazygit"
 alias ld="lazydocker"
 
 alias forti="~/.config/scripts/forti-vpn.sh"
-alias awgup="~/.config/scripts/amnezia-up.sh"
-alias awgdown="~/.config/scripts/amnezia-down.sh"
+alias awgup="~/.config/scripts/amnezia-neth1-up.sh"
+alias awgdown="~/.config/scripts/amnezia-neth1-down.sh"
