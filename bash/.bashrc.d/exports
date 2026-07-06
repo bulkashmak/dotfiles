@@ -1,8 +1,8 @@
 # ~/.bashrc.d/exports
 
 # Java
-#export JAVA_HOME=/usr/lib/jvm/temurin-21-jdk
-#export PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME=/home/bulat/.jdks/temurin-21.0.11/
+export PATH=$JAVA_HOME/bin:$PATH
 
 # Android SDK
 export ANDROID_HOME=$HOME/Android/Sdk
