@@ -308,6 +308,12 @@ binds {
     Mod+Shift+P      { power-off-monitors; }
 }
 
+gestures {
+    hot-corners {
+        bottom-left
+    }
+}
+
 output "eDP-1" {
     mode "1920x1200@60.026"
     scale 1
