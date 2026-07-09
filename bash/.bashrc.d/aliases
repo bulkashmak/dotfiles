@@ -2,6 +2,8 @@
 
 alias ff="fastfetch"
 
+alias dots="cd ~/.dots"
+
 alias l="lsd -la"
 alias ll="lsd -l"
 alias ls="lsd"
