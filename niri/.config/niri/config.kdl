@@ -131,6 +131,8 @@ window-rule {
 window-rule {
     match app-id=r#"zen$"#
     match app-id=r#"^com\.slack\.Slack$"#
+    match app-id=r#"^jetbrains-studio$"#
+    match app-id=r#"^jetbrains-idea$"#
     open-maximized true
 }
 
