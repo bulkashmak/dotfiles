@@ -136,6 +136,12 @@ window-rule {
     open-maximized true
 }
 
+// Davinci Resolve disable fullscreen
+window-rule {
+  match app-id="resolve"
+  open-fullscreen false
+}
+
 // Workaround WezTerm's initial-configure bug
 window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
