@@ -22,7 +22,8 @@
             "app.zen_browser.zen",
             "com.valvesoftware.Steam",
             "jetbrains-studio",
-            "jetbrains-idea"
+            "jetbrains-idea",
+            "org.gnome.Nautilus"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -523,7 +524,7 @@
         "weatherTaliaMascotAlways": false
     },
     "network": {
-        "bluetoothAutoConnect": true,
+        "bluetoothAutoConnect": false,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
         "bluetoothRssiPollIntervalMs": 60000,
