@@ -1,5 +1,9 @@
 # ~/.bashrc.d/exports
 
+# Proxy
+export HTTPS_PROXY=http://127.0.0.1:2080
+export HTTP_PROXY=http://127.0.0.1:2080
+
 # Java
 export JAVA_HOME=/home/bulat/.jdks/temurin-21.0.11/
 export PATH=$JAVA_HOME/bin:$PATH
